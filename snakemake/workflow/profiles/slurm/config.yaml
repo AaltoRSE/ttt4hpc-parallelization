@@ -1,0 +1,15 @@
+# Tell snakemake to use Slurm
+executor: slurm
+
+# Maximum number of parallel jobs submitted by Snakemake
+jobs: 10  
+
+# Set number of requested threads (in Snakemake equal to cpus-per-task) for our rule(s)
+set-threads: 
+  plot_decision_boundaries: 2
+
+# Set other requested resources (memory and runtime) for our rule(s)
+set-resources:
+  plot_decision_boundaries:
+    mem_mb: 200
+    runtime: 00:15:00

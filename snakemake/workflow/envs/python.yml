@@ -1,0 +1,9 @@
+name: ttt4hpc_parallelization_python
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - scikit-learn
+  - pandas
+  - matplotlib
+  - jsonlines
